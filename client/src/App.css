@@ -1,0 +1,210 @@
+:root {
+  --primary-color: #17a2b8;
+  --primary-hover: #108a9c;
+  --light-color: #f4f4f4;
+  --light-hover: #dadada;
+  --dark-color: #343a40;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: rgb(170, 170, 170);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200, 200, 200);
+  padding: 0.7rem 2rem;
+  display: fixed;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #333;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.login-form,
+.register-form,
+.add-list-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(158, 158, 158);
+  box-shadow: 0px 10px 13px -7px #000000;
+  padding: 1rem;
+}
+
+.add-list-div {
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-input,
+.register-input,
+.add-list-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.container {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-btns {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.landing-heading {
+  font-size: 3rem;
+}
+
+.landing-subheading {
+  font-size: 1.5rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-hover);
+}
+
+.banner {
+  font-size: 48px;
+}
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+
+.list {
+  width: 400px;
+  background-color: rgb(229, 250, 160);
+
+  margin: 20px;
+  padding: 0;
+}
+
+.list-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-weight: bold;
+  padding: 6px;
+}
+
+.list-item,
+.add-list-item {
+  border: 1px solid var(--dark-color);
+  padding: 6px;
+}
+
+.add-list-input {
+  margin: 0;
+  padding: 6px;
+  width: 70%;
+}
+
+.delete-list {
+  color: var(--light-color);
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.delete-list-item {
+  cursor: pointer;
+}
+
+/* utility classes */
+.my2 {
+  margin: 20px 0;
+}
+
+.mx2 {
+  margin: 0 20px;
+}

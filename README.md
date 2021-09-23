@@ -1,0 +1,1 @@
+This is a simple web application using the MERN (MongoDB, Express, React, Node.js) stack. Feel free to use this as a guide for making such a full-stack application or offer ideas/suggestions for imporvement. Thanks!
